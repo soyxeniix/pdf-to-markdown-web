@@ -11,3 +11,5 @@ The core extraction engine is powered by PyMuPDF (`pymupdf4llm`). The applicatio
 * **Non-blocking Execution:** UI remains responsive during conversion tasks by running heavy operations on separate background threads.
 * **Modular Architecture:** Core extraction logic (`core/`) is decoupled from presentation layers (`gui/` and Streamlit web app) to facilitate maintenance and extension.
 * **Deployment Options:** Can be executed locally as a desktop app or deployed to cloud platforms such as Streamlit Cloud.
+
+- **Deployment Options**: Can be executed locally as a desktop app or deployed to cloud platforms such as [Streamlit Cloud](https://pdf-to-markdown-web-dncdu4cdwrnnv3copxrtqt.streamlit.app/).
