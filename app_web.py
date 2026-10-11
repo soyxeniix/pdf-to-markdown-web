@@ -24,11 +24,9 @@ if uploaded_files:
             st.write(f"📌 **{pdf_file.name}**")
             
         with col2:
-            # Leer el archivo en memoria y convertir
-            pdf_bytes = pdf_file.read()
-            
             try:
-                markdown_text = pymupdf4llm.to_markdown(pdf_bytes)
+                # Pasar 'pdf_file' directamente en lugar de 'pdf_bytes'
+                markdown_text = pymupdf4llm.to_markdown(pdf_file)
                 
                 base_name = pdf_file.name.rsplit(".", 1)[0]
                 md_filename = f"{base_name}_markdown.md"
